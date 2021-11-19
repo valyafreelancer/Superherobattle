@@ -1,5 +1,4 @@
 package factory;
-
 import superhero.*;
 
 public class Factory {
@@ -8,7 +7,8 @@ public class Factory {
         batMan.setName("Брюс Уэйн");
         batMan.setLabel(Label.DC);
         batMan.setForce(5);
-        batMan.setSuperpower("Боевые искусства");
+        batMan.useSuperPower();
+        batMan.fly();
 
         return batMan;
     }
@@ -18,7 +18,7 @@ public class Factory {
         spiderMan.setName("Питер Паркер");
         spiderMan.setLabel(Label.MARVEL);
         spiderMan.setForce(6);
-        spiderMan.setSuperpower("Ловкость");
+        spiderMan.useSuperPower();
 
         return spiderMan;
 
@@ -29,7 +29,7 @@ public class Factory {
         aquaMan.setName("Артур Карри");
         aquaMan.setLabel(Label.DC);
         aquaMan.setForce(7);
-        aquaMan.setSuperpower("Дыхание под водой");
+        aquaMan.useSuperPower();
 
         return aquaMan;
     }
@@ -39,7 +39,7 @@ public class Factory {
         hulk.setName("Брюс Беннер");
         hulk.setLabel(Label.MARVEL);
         hulk.setForce(9);
-        hulk.setSuperpower("Суперскорость");
+        hulk.useSuperPower();
 
         return hulk;
     }
@@ -49,7 +49,8 @@ public class Factory {
         superMan.setName("Кларк Кент");
         superMan.setLabel(Label.DC);
         superMan.setForce(10);
-        superMan.setSuperpower("Непробиваемость");
+        superMan.useSuperPower();
+        superMan.fly();
 
         return superMan;
     }
@@ -59,7 +60,7 @@ public class Factory {
         wolverine.setName("Логан");
         wolverine.setLabel(Label.MARVEL);
         wolverine.setForce(8);
-        wolverine.setSuperpower("Регенерация");
+        wolverine.useSuperPower();
 
         return wolverine;
     }

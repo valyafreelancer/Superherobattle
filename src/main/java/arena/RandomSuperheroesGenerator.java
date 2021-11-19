@@ -1,28 +1,32 @@
 package arena;
 
-import superhero.*;
+import factory.Factory;
+import superhero.Superhero;
 
 import java.util.Random;
 
+
 public class RandomSuperheroesGenerator {
     final Random random = new Random();
+    Factory FACTORY = new Factory();
 
     public Superhero next() {
-        switch (random.nextInt(2)) {
+        switch (random.nextInt(6)) {
             default:
             case 0:
-                return new AquaMan();
+                return FACTORY.createAquaMan();
             case 1:
-                return new BatMan();
+                return FACTORY.createBatMan();
             case 2:
-                return new Hulk();
+                return FACTORY.createHulk();
             case 3:
-                return new SpiderMan();
+                return FACTORY.createSpiderMan();
             case 4:
-                return new SuperMan();
+                return FACTORY.createSuperMan();
             case 5:
-                return new Wolverine();
+                return FACTORY.createWolverine();
 
         }
     }
+
 }
