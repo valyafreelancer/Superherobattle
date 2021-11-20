@@ -21,7 +21,6 @@ public class Application {
         }
         superhero1.useSuperPower();
         superhero1.useSuperPower();
-        if (RANDOM.nextInt())
 
     }
 
